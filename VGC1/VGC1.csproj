@@ -53,6 +53,18 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Dimention.cs" />
+    <Compile Include="Models\Module.cs" />
+    <Compile Include="Models\MoveEvent.cs" />
+    <Compile Include="Models\Platform.cs" />
+    <Compile Include="Models\Stage.cs" />
+    <Compile Include="MoveThumb.cs" />
+    <Compile Include="ViewHelper.cs" />
+    <Compile Include="ViewModels\ViewModelBase.cs" />
+    <Compile Include="ViewModels\ViewModelModule.cs" />
+    <Compile Include="ViewModels\ViewModelMoveEvent.cs" />
+    <Compile Include="ViewModels\ViewModelPlatform.cs" />
+    <Compile Include="ViewModels\ViewModelStage.cs" />
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -92,6 +104,10 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="ComunicationModules\" />
+    <Folder Include="DataSources\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
