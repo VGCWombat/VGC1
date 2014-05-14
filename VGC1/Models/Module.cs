@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace VGC1
 {
-    class Module
+    public class Module
     {
         private int id;
         private Platform platformA;

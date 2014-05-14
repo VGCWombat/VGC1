@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace VGC1
 {
-    class Dimention
+    public class Dimention
     {
         private int x;
         private int y;

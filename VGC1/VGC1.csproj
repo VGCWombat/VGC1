@@ -59,6 +59,9 @@
     <Compile Include="Models\Platform.cs" />
     <Compile Include="Models\Stage.cs" />
     <Compile Include="MoveThumb.cs" />
+    <Compile Include="StageDimension.xaml.cs">
+      <DependentUpon>StageDimension.xaml</DependentUpon>
+    </Compile>
     <Compile Include="ViewHelper.cs" />
     <Compile Include="ViewModels\ViewModelBase.cs" />
     <Compile Include="ViewModels\ViewModelModule.cs" />
@@ -77,6 +80,10 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="StageDimension.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs">
