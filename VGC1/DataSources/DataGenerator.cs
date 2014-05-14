@@ -18,6 +18,7 @@ namespace VGC1
         public static Stage GetStage()
         {
             Stage newStage = new Stage(new Dimention(Random.Next(5,10), Random.Next(5,10)));
+            newStage.AddModule(DataGenerator.GetModule());
 
             return newStage;
         }
