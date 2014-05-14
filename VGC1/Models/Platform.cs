@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace VGC1
 {
-    class Platform
+    public class Platform
     {
         private Dimention location;
         private List<MoveEvent> moves;

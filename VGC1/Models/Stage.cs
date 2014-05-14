@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace VGC1
 {
-    class Stage
+    public class Stage
     {
         private int id;
         private Dimention dimention;

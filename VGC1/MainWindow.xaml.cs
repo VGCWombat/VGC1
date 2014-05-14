@@ -20,8 +20,15 @@ namespace VGC1
     /// </summary>
     public partial class MainWindow : Window
     {
+        private Project project;
         public MainWindow()
         {
+            InitializeComponent();
+        }
+
+        public MainWindow(Project project)
+        {
+            this.project = project;
             InitializeComponent();
         }
     }
