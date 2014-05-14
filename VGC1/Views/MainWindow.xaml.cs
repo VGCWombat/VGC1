@@ -29,6 +29,7 @@ namespace VGC1
         public MainWindow(Project project)
         {
             this.project = project;
+            this.project = DataGenerator.GetProject();
             InitializeComponent();
         }
     }

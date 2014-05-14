@@ -53,20 +53,21 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="Dimention.cs" />
+    <Compile Include="DataSources\DataGenerator.cs" />
+    <Compile Include="AppResources\Dimention.cs" />
     <Compile Include="Models\Module.cs" />
     <Compile Include="Models\MoveEvent.cs" />
     <Compile Include="Models\Platform.cs" />
     <Compile Include="Models\Stage.cs" />
-    <Compile Include="MoveThumb.cs" />
+    <Compile Include="ViewModels\MoveThumb.cs" />
     <Compile Include="AppResources\Project.cs" />
-    <Compile Include="ViewHelper.cs" />
+    <Compile Include="ViewModels\ViewHelper.cs" />
     <Compile Include="ViewModels\ViewModelBase.cs" />
     <Compile Include="ViewModels\ViewModelModule.cs" />
     <Compile Include="ViewModels\ViewModelMoveEvent.cs" />
     <Compile Include="ViewModels\ViewModelPlatform.cs" />
     <Compile Include="ViewModels\ViewModelStage.cs" />
-    <Page Include="MainWindow.xaml">
+    <Page Include="Views\MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
@@ -74,7 +75,7 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="MainWindow.xaml.cs">
+    <Compile Include="Views\MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
@@ -108,7 +109,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="ComunicationModules\" />
-    <Folder Include="DataSources\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
