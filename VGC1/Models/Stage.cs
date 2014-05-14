@@ -17,6 +17,15 @@ namespace VGC1
             this.dimention = dimention;
             this.modules = new List<Module>();
         }
+        public Dimention Dim
+        {
+            get { return this.dimention; }
+            set
+            {
+                
+            }
+            
+        }
         public int ID
         {
             get { return this.id; }

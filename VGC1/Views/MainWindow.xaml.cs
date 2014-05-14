@@ -29,12 +29,17 @@ namespace VGC1
         public MainWindow(Project project)
         {
             this.project = project;
-            this.project = DataGenerator.GetProject();
+            
             InitializeComponent();
         }
 
         private void MenuItem_Click(object sneder, RoutedEventArgs e)
         {
+            this.project = DataGenerator.GetProject();
+            
+            StageDimension stage = new StageDimension(this);
+           
+            stage.Show();
 
         }
     }

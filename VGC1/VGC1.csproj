@@ -36,6 +36,8 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Core" />
@@ -62,6 +64,9 @@
     <Compile Include="ViewModels\MoveThumb.cs" />
     <Compile Include="AppResources\Project.cs" />
     <Compile Include="ViewModels\ViewHelper.cs" />
+    <Compile Include="Views\StageCreator.xaml.cs">
+      <DependentUpon>StageCreator.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Views\StageDimension.xaml.cs">
       <DependentUpon>StageDimension.xaml</DependentUpon>
     </Compile>
@@ -82,6 +87,10 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="Views\StageCreator.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Views\StageDimension.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>

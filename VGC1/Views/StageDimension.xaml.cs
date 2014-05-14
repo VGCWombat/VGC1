@@ -19,9 +19,39 @@ namespace VGC1
     /// </summary>
     public partial class StageDimension : Window
     {
+        MainWindow parent1;
+        int dimY,dimX;
+
         public StageDimension()
         {
             InitializeComponent();
+        }
+        public StageDimension(MainWindow parent)
+        {
+            InitializeComponent();
+            parent1 = parent;
+            
+           
+        }
+        
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            this.Hide();
+        }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            dimX = Convert.ToInt16(TextBoxX.Text);
+            dimY = Convert.ToInt16(TextBoxY.Text);
+            int col = (int)(dimX - (dimX % 1.2) / 1.2);
+            int row = (int)(dimY - (dimY % 1.2) / 1.2);
+            Dimention dim = new Dimention(col, row);
+            Stage stage = new Stage(dim);
+            StageCreator create = new StageCreator(parent1,stage);
+            create.Show();
+            this.Hide();
+
         }
     }
 }

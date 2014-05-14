@@ -25,13 +25,13 @@
                 <RowDefinition/>
                 <RowDefinition/>
             </Grid.RowDefinitions>
-            <TextBlock Grid.Row="0" Height="40" Width="90" ></TextBlock>
+            <TextBox Name="TextBoxX" Grid.Row="0" Height="25" Width="90" ></TextBox>
             <Label Grid.Row="0" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="30" FontSize="30">m</Label>
-            <TextBlock Grid.Row="1" Height="40" Width="90"></TextBlock>
+            <TextBox Name="TextBoxY" Grid.Row="1" Height="25" Width="90"></TextBox>
             <Label Grid.Row="1" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="30" FontSize="30">m</Label>
         </Grid>
-        <Button Grid.Column="0" Grid.Row="1" FontSize="25" Margin="30,70,30,70">Cancel</Button>
-        <Button Grid.Column="1" Grid.Row="1" FontSize="25" Margin="30,70,30,70">Next</Button>
+        <Button Grid.Column="0" Grid.Row="1" FontSize="25" Margin="30,70,30,70" Click="Button_Click">Cancel</Button>
+        <Button Grid.Column="1" Grid.Row="1" FontSize="25" Margin="30,70,30,70" Click="Button_Click_1">Next</Button>
 
     </Grid>
 </Window>
